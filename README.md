@@ -32,6 +32,14 @@ scripts/
 
 ## 使用方式
 
+### 在线浏览
+
+可以直接打开 GitHub Pages：
+
+https://9527wow.github.io/huchenfeng-weibo-archive/
+
+这是和本地 `index.html` 相同的图文浏览页，按月份展示正文和图片。
+
 ### 普通浏览
 
 下载或克隆完整仓库后，直接双击根目录的 `index.html`。它是一个离线静态网页，左侧按月份导航，右侧显示微博正文和图片，也可以在搜索框里搜正文、话题和地点。
@@ -40,9 +48,9 @@ scripts/
 
 ### 在 GitHub 上浏览
 
-GitHub 网页会优先展示本 README。想看完整图文网页，可以：
+GitHub 仓库页会优先展示本 README。想看完整图文网页，可以：
 
-1. 打开仓库的 GitHub Pages 页面（如果仓库开启了 Pages）。
+1. 打开上面的 GitHub Pages 页面。
 2. 或点击 GitHub 的 `Code` / `Download ZIP` 下载完整仓库，解压后打开 `index.html`。
 
 如果你准备把图片一起开源，建议用 Git LFS 管理 `media/` 目录，或者把完整媒体包放到 Release 附件里。否则普通 Git 仓库会接近 1.1GB，克隆会比较慢。
