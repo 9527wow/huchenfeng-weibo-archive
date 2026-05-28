@@ -272,7 +272,9 @@ def make_index_html(posts: list[dict], by_month: dict[str, list[dict]]) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>户晨风微博历史内容归档</title>
+  <meta name="description" content="悠悠的户：户晨风微博历史内容归档，收录户晨风微博备份、户晨风2023微博图文时间线、原始 HTML 与结构化数据。">
+  <meta name="keywords" content="悠悠的户,户晨风,户晨风微博,户晨风2023,户晨风微博备份,户晨风微博历史内容,户晨风微博归档,户晨风图文时间线">
+  <title>悠悠的户：户晨风微博历史内容归档</title>
   <style>
     :root {{
       color-scheme: light;
@@ -448,7 +450,8 @@ def make_index_html(posts: list[dict], by_month: dict[str, list[dict]]) -> str:
 <body>
   <div class="layout">
     <aside>
-      <h1>户晨风微博归档</h1>
+      <h1>悠悠的户</h1>
+      <p class="summary">户晨风微博历史内容归档 · 户晨风微博备份 · 户晨风图文时间线</p>
       <p class="summary">{len(posts)} 条微博 · {total_media} 张图片 · {posts[-1]['created_at']} 至 {posts[0]['created_at']}</p>
       <input class="search" id="search" type="search" placeholder="搜索正文、话题、地点">
       <nav>{nav}</nav>
@@ -713,9 +716,13 @@ def main() -> None:
     write_text(output / "LICENSE", "\n".join(license_text) + "\n")
 
     readme = [
-        "# 户晨风微博历史内容归档",
+        "# 悠悠的户：户晨风微博历史内容归档",
         "",
-        "这是从本地 WeiBack 备份中整理出的户晨风微博历史内容索引。项目保留原始 HTML，并额外生成机器可读数据、按月时间线和统计文档，方便检索、复核与二次整理。",
+        "中文名：**悠悠的户：户晨风微博历史内容归档**。",
+        "",
+        "这是从本地 WeiBack 备份中整理出的户晨风微博历史内容索引，也可称为“户晨风微博备份”“户晨风微博图文归档”“户晨风2023微博时间线”。项目保留原始 HTML，并额外生成机器可读数据、按月时间线和统计文档，方便检索、复核与二次整理。",
+        "",
+        "关键词：户晨风、户晨风微博、户晨风2023、户晨风微博备份、户晨风微博历史内容、户晨风微博归档、户晨风图文时间线、悠悠的户。",
         "",
         "## 当前数据",
         "",
